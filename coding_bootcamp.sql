@@ -100,8 +100,7 @@ FOREIGN KEY (cohort_id) REFERENCES cohort(cohort_id)
 
 CREATE TABLE assignment (
 assignment_id INT NOT NULL AUTO_INCREMENT,
-cohort_id INT NOT NULL,
-unit_id INT NOT NULL, 
+cohort_id INT NOT NULL, 
 professor_id INT NOT NULL,
 title VARCHAR(100) NOT NULL,
 type ENUM('Homework', 'Lab', 'Quiz', 'Mid-point', 'Final Project'),
